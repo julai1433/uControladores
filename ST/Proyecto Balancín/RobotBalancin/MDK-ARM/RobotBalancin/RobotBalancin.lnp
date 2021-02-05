@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"robotbalancin\startup_stm32f103xb.o"
+"robotbalancin\main.o"
+"robotbalancin\stm32f1xx_it.o"
+"robotbalancin\stm32f1xx_hal_msp.o"
+"robotbalancin\tj_mpu6050.o"
+"robotbalancin\stm32f1xx_hal_gpio_ex.o"
+"robotbalancin\stm32f1xx_hal_i2c.o"
+"robotbalancin\stm32f1xx_hal_tim.o"
+"robotbalancin\stm32f1xx_hal_tim_ex.o"
+"robotbalancin\stm32f1xx_hal_uart.o"
+"robotbalancin\stm32f1xx_hal.o"
+"robotbalancin\stm32f1xx_hal_rcc.o"
+"robotbalancin\stm32f1xx_hal_rcc_ex.o"
+"robotbalancin\stm32f1xx_hal_gpio.o"
+"robotbalancin\stm32f1xx_hal_dma.o"
+"robotbalancin\stm32f1xx_hal_cortex.o"
+"robotbalancin\stm32f1xx_hal_pwr.o"
+"robotbalancin\stm32f1xx_hal_flash.o"
+"robotbalancin\stm32f1xx_hal_flash_ex.o"
+"robotbalancin\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "RobotBalancin\RobotBalancin.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "RobotBalancin.map" -o RobotBalancin\RobotBalancin.axf

@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"v2.0\startup_stm32f103xb.o"
+"v2.0\main.o"
+"v2.0\stm32f1xx_it.o"
+"v2.0\stm32f1xx_hal_msp.o"
+"v2.0\stm32f1xx_hal_gpio_ex.o"
+"v2.0\stm32f1xx_hal_adc.o"
+"v2.0\stm32f1xx_hal_adc_ex.o"
+"v2.0\stm32f1xx_hal_i2c.o"
+"v2.0\stm32f1xx_hal_tim.o"
+"v2.0\stm32f1xx_hal_tim_ex.o"
+"v2.0\stm32f1xx_hal_uart.o"
+"v2.0\stm32f1xx_hal.o"
+"v2.0\stm32f1xx_hal_rcc.o"
+"v2.0\stm32f1xx_hal_rcc_ex.o"
+"v2.0\stm32f1xx_hal_gpio.o"
+"v2.0\stm32f1xx_hal_dma.o"
+"v2.0\stm32f1xx_hal_cortex.o"
+"v2.0\stm32f1xx_hal_pwr.o"
+"v2.0\stm32f1xx_hal_flash.o"
+"v2.0\stm32f1xx_hal_flash_ex.o"
+"v2.0\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "v2.0\v2.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "v2.map" -o v2.0\v2.0

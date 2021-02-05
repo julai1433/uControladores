@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"pruebauart\startup_stm32f103xb.o"
+"pruebauart\main.o"
+"pruebauart\stm32f1xx_it.o"
+"pruebauart\stm32f1xx_hal_msp.o"
+"pruebauart\stm32f1xx_hal_gpio_ex.o"
+"pruebauart\stm32f1xx_hal_tim.o"
+"pruebauart\stm32f1xx_hal_tim_ex.o"
+"pruebauart\stm32f1xx_hal_uart.o"
+"pruebauart\stm32f1xx_hal.o"
+"pruebauart\stm32f1xx_hal_rcc.o"
+"pruebauart\stm32f1xx_hal_rcc_ex.o"
+"pruebauart\stm32f1xx_hal_gpio.o"
+"pruebauart\stm32f1xx_hal_dma.o"
+"pruebauart\stm32f1xx_hal_cortex.o"
+"pruebauart\stm32f1xx_hal_pwr.o"
+"pruebauart\stm32f1xx_hal_flash.o"
+"pruebauart\stm32f1xx_hal_flash_ex.o"
+"pruebauart\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "PruebaUART\PruebaUART.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "PruebaUART.map" -o PruebaUART\PruebaUART.axf

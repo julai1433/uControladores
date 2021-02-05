@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"pruebasensor_3.0\startup_stm32f103xb.o"
+"pruebasensor_3.0\main.o"
+"pruebasensor_3.0\stm32f1xx_it.o"
+"pruebasensor_3.0\stm32f1xx_hal_msp.o"
+"pruebasensor_3.0\stm32f1xx_hal_gpio_ex.o"
+"pruebasensor_3.0\stm32f1xx_hal_adc.o"
+"pruebasensor_3.0\stm32f1xx_hal_adc_ex.o"
+"pruebasensor_3.0\stm32f1xx_hal_i2c.o"
+"pruebasensor_3.0\stm32f1xx_hal_tim.o"
+"pruebasensor_3.0\stm32f1xx_hal_tim_ex.o"
+"pruebasensor_3.0\stm32f1xx_hal_uart.o"
+"pruebasensor_3.0\stm32f1xx_hal.o"
+"pruebasensor_3.0\stm32f1xx_hal_rcc.o"
+"pruebasensor_3.0\stm32f1xx_hal_rcc_ex.o"
+"pruebasensor_3.0\stm32f1xx_hal_gpio.o"
+"pruebasensor_3.0\stm32f1xx_hal_dma.o"
+"pruebasensor_3.0\stm32f1xx_hal_cortex.o"
+"pruebasensor_3.0\stm32f1xx_hal_pwr.o"
+"pruebasensor_3.0\stm32f1xx_hal_flash.o"
+"pruebasensor_3.0\stm32f1xx_hal_flash_ex.o"
+"pruebasensor_3.0\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "PruebaSensor_3.0\PruebaSensor_3.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "PruebaSensor_3.map" -o PruebaSensor_3.0\PruebaSensor_3.0

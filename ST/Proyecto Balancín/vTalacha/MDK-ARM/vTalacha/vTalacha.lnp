@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"vtalacha\startup_stm32f103xb.o"
+"vtalacha\main.o"
+"vtalacha\stm32f1xx_it.o"
+"vtalacha\stm32f1xx_hal_msp.o"
+"vtalacha\stm32f1xx_hal_gpio_ex.o"
+"vtalacha\stm32f1xx_hal_i2c.o"
+"vtalacha\stm32f1xx_hal_tim.o"
+"vtalacha\stm32f1xx_hal_tim_ex.o"
+"vtalacha\stm32f1xx_hal_uart.o"
+"vtalacha\stm32f1xx_hal.o"
+"vtalacha\stm32f1xx_hal_rcc.o"
+"vtalacha\stm32f1xx_hal_rcc_ex.o"
+"vtalacha\stm32f1xx_hal_gpio.o"
+"vtalacha\stm32f1xx_hal_dma.o"
+"vtalacha\stm32f1xx_hal_cortex.o"
+"vtalacha\stm32f1xx_hal_pwr.o"
+"vtalacha\stm32f1xx_hal_flash.o"
+"vtalacha\stm32f1xx_hal_flash_ex.o"
+"vtalacha\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "vTalacha\vTalacha.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "vTalacha.map" -o vTalacha\vTalacha.axf

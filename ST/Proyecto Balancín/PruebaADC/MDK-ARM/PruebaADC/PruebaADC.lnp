@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"pruebaadc\startup_stm32f103xb.o"
+"pruebaadc\main.o"
+"pruebaadc\stm32f1xx_it.o"
+"pruebaadc\stm32f1xx_hal_msp.o"
+"pruebaadc\stm32f1xx_hal_gpio_ex.o"
+"pruebaadc\stm32f1xx_hal_adc.o"
+"pruebaadc\stm32f1xx_hal_adc_ex.o"
+"pruebaadc\stm32f1xx_hal_tim.o"
+"pruebaadc\stm32f1xx_hal_tim_ex.o"
+"pruebaadc\stm32f1xx_hal_uart.o"
+"pruebaadc\stm32f1xx_hal.o"
+"pruebaadc\stm32f1xx_hal_rcc.o"
+"pruebaadc\stm32f1xx_hal_rcc_ex.o"
+"pruebaadc\stm32f1xx_hal_gpio.o"
+"pruebaadc\stm32f1xx_hal_dma.o"
+"pruebaadc\stm32f1xx_hal_cortex.o"
+"pruebaadc\stm32f1xx_hal_pwr.o"
+"pruebaadc\stm32f1xx_hal_flash.o"
+"pruebaadc\stm32f1xx_hal_flash_ex.o"
+"pruebaadc\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "PruebaADC\PruebaADC.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "PruebaADC.map" -o PruebaADC\PruebaADC.axf

@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"mpulibraryusart_prueba1\startup_stm32f103xb.o"
+"mpulibraryusart_prueba1\main.o"
+"mpulibraryusart_prueba1\stm32f1xx_it.o"
+"mpulibraryusart_prueba1\stm32f1xx_hal_msp.o"
+"mpulibraryusart_prueba1\tj_mpu6050.o"
+"mpulibraryusart_prueba1\stm32f1xx_hal_gpio_ex.o"
+"mpulibraryusart_prueba1\stm32f1xx_hal_i2c.o"
+"mpulibraryusart_prueba1\stm32f1xx_hal_tim.o"
+"mpulibraryusart_prueba1\stm32f1xx_hal_tim_ex.o"
+"mpulibraryusart_prueba1\stm32f1xx_hal_uart.o"
+"mpulibraryusart_prueba1\stm32f1xx_hal.o"
+"mpulibraryusart_prueba1\stm32f1xx_hal_rcc.o"
+"mpulibraryusart_prueba1\stm32f1xx_hal_rcc_ex.o"
+"mpulibraryusart_prueba1\stm32f1xx_hal_gpio.o"
+"mpulibraryusart_prueba1\stm32f1xx_hal_dma.o"
+"mpulibraryusart_prueba1\stm32f1xx_hal_cortex.o"
+"mpulibraryusart_prueba1\stm32f1xx_hal_pwr.o"
+"mpulibraryusart_prueba1\stm32f1xx_hal_flash.o"
+"mpulibraryusart_prueba1\stm32f1xx_hal_flash_ex.o"
+"mpulibraryusart_prueba1\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "MPUlibraryUSART_Prueba1\MPUlibraryUSART_Prueba1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "MPUlibraryUSART_Prueba1.map" -o MPUlibraryUSART_Prueba1\MPUlibraryUSART_Prueba1.axf
